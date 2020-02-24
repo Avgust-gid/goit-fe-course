@@ -1,0 +1,227 @@
+.wrapper {
+    box-sizing: content-box;
+    width: 1170px;
+    margin: auto;
+}
+
+
+/* SITE NAVIGATORS */
+
+.section-menu {
+    box-sizing: content-box;
+    margin: auto;
+    width: 1170px;
+    height: 20px;
+    margin-top: 38px;
+    font-size: 0;
+}
+.logo {
+    float: left;
+    margin: 0;
+    margin-left: 30px;
+}
+.menu {
+    float: right;
+    margin: 3px 0 0 0;
+    padding-left: 0;
+    text-transform: uppercase; 
+    list-style: none; 
+
+}
+.menu-item {
+    float: left;
+    padding-right: 29px;
+    margin: 0px;
+    line-height: 11px;
+    text-align: center;
+    font-family: "open sans";
+    font-weight: 700;
+    font-size: 14px;    
+}
+.menu-link {
+    text-decoration: none;
+    color: black;
+}
+.menu-link:hover {
+    color: #1abc9c;
+}
+
+
+/* LOGO-HEADER */
+
+
+.logo-header {
+    text-align: center;
+    font-family: "roboto";
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #515151;
+    margin: 0;
+    margin-top: 110px;
+}
+.logo-header::after {
+    content: '';
+    display: block;
+    width: 160px;
+    margin: auto;
+    margin-top: 30px;
+    border-bottom: 5px solid #1abc9c;
+}
+
+
+/* SECTION PRODUCTS */
+
+
+.section-products {
+    width: 1170px;
+    padding-top: 90px;
+    margin: auto;
+}
+.section-products::after {
+    content: '.';
+    display: block;
+    clear:both;
+    height: 0;
+}
+.card {
+    background-color: #e9f0fd;
+    width: 255px;
+    height: 322px;
+    text-align: center; 
+    margin: 15px;
+    float: left;
+}
+.card:nth-child(4n+1) {
+    margin-left: 30px;
+}
+.size-block {
+    width: 255px;
+    height: 264px;
+    display: inline-block;
+    line-height: 264px; 
+    margin-bottom: 20px;
+}
+.picture {
+    vertical-align: middle;
+}
+.description {
+    background-color: #323232;
+    color: white;
+}
+.card-name {
+    display: inline-block;
+    width: 74%;
+    height: 40px;
+    font-size: 18px;
+    font-family: roboto;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 13px;
+}
+.card-price {
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.44);
+    font-size: 18px;
+    font-family: roboto;
+    line-height: 40px;
+    margin-right: -4px;
+}
+.card:hover .description {
+    background-color: #1abc9c;
+}
+
+/* LOGO-BOT */
+
+
+.logo-bot {
+    text-align: center;
+    color: #555252;
+    font-family: "roboto";
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 105px;
+}
+.logo-bot::after {
+    content: '';
+    display: block;
+    width: 160px;
+    margin: auto;
+    margin-top: 30px;
+    border-bottom: 5px solid #1abc9c;
+}
+
+
+/* SECTION NEWS */
+
+
+.section-news {
+    width: 1170px;
+    padding-top: 80px;
+    margin: auto;
+}
+.section-news::after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.news {
+    width: 350px;
+    float: left;
+    margin: 0 15px;   
+}
+.news:first-child {
+    margin-left: 30px;
+}
+.img-news {
+    width: 100%;
+}
+
+.news-comment {
+    width: 301px;
+    height: 44px;
+    color: #555252;
+    font-family: "Open Sans Semibold"; 
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+.news-comment::after {
+    content: '';
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: #4ec6ab;
+    margin-top: 11px;
+    margin-bottom: 0;
+}
+.news-paragraph {
+    width: 335px;
+    color: #555252;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: -0.28px;
+    margin-top: 43px;
+}
+.click-news {
+    width: 160px;
+    height: 51px;
+    background-color: #4ec6ab;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.32px;   
+    border: 0; 
+    border-radius: 4%;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
