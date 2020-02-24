@@ -170,6 +170,7 @@ main {
     display: inline-block;
     height: 322px;
     width: 255px;
+    margin: 15px;
 }   
 .card-fon-first {
     background: url(..//images/category-1.png)
