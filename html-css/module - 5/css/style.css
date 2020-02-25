@@ -11,13 +11,14 @@ body {
 
 
 nav {
-    width: 1110px;
+    width: 100%;
     height: 90px;
     padding: 0;
     margin: auto;
 }
 .box-logo {
     margin: 0;
+    margin-left: 245px;
 }
 .logo-name {
     float: left;
@@ -31,6 +32,8 @@ nav {
     float: right;
     line-height: 11px;
     margin-top: 43px;
+    margin-right: 245px;
+    font-size: 14px;
     font-weight: 700;
     font-family: "Open Sans";
     text-transform: uppercase; 
@@ -38,7 +41,7 @@ nav {
 }
 .menu-item {
     display: inline-block;    
-    margin-right: 17.16px;
+    margin-right: 15px;
 }
 .menu-item:last-child {
     margin-right: 0;
@@ -56,7 +59,7 @@ nav {
 
 
 header {
-    width: 100hv;
+    width: 100wv;
     height: auto;
 }
 .logo-fon {
