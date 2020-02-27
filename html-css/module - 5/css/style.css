@@ -67,7 +67,8 @@ h1 {
     margin: auto;
     text-align: center;
     color: white;
-    font-family:"Roboto Black";
+    font-family: roboto;
+    font-weight: 900;
     font-size: 60px;
     letter-spacing: -1.2px;
     text-transform: uppercase;
@@ -75,7 +76,7 @@ h1 {
 }
 .commercial-tex {
     color: #ffffff;
-    font-family: "Roboto Light";
+    font-family: roboto;
     font-weight: 300;
     letter-spacing: -0.48px;
     line-height: 80px;
@@ -137,9 +138,9 @@ h2 {
     margin: 0;
     text-align: center;
     color: #515151;
-    font-family: "Roboto Black";
+    font-family: roboto;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 900;
     line-height: 32px;
     text-transform: uppercase;
     letter-spacing: -0.96px;
