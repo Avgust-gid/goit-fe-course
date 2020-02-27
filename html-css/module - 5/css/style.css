@@ -1,7 +1,6 @@
-
-
 body {
     padding: 0;
+    margin: 0;
 }
 
 
@@ -9,90 +8,72 @@ body {
 
 
 nav {
-    width: 100%;
-    height: 90px;
-    padding: 0;
     margin: auto;
+    height: 90px;
 }
-.box-logo {
-    margin: 0;
-    margin-left: 245px;
-}
-.logo-name {
-    float: left;
-    margin-top: 38px;
-}
-.logo-name img {
-    width: 78px;
-    height: 21px;
+.logo-nav {
+    margin-left: 244px;
+    padding-top: 38px;
+    display: inline-block;
 }
 .menu {
     float: right;
-    line-height: 11px;
-    margin-top: 43px;
+    margin: 0;
     margin-right: 245px;
-    font-size: 14px;
-    font-weight: 700;
-    font-family: "Open Sans";
-    text-transform: uppercase; 
-    padding: 0;
+    padding-top: 43px;
+}
+.menu::after {
+    content: '.';
+    clear: both;
 }
 .menu-item {
-    display: inline-block;    
-    margin-right: 15px;
+    display: inline-block;
+    margin-left: 15px;
 }
-.menu-item:last-child {
-    margin-right: 0;
-}
-.menu-link {
+.menu-item a {
     text-decoration: none;
-    color: #000000;
-    font-family: "Open Sans";
+    font-family: "open sans";
+    color: #0f0101;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 11px;
+    letter-spacing: -0.28px;
 }
-.menu-link:hover {
+.menu-item a:hover {
     color: #1abc9c;
 }
 
-             /* СЛАЙД */
 
+/* СЛАЙД */
 
-header {
-    width: 100wv;
-    margin: auto;
-}
-.logo-fon {
+.slide {
     background: url(../images/slide.png) 36% 100% no-repeat;
-    width: 100wv;
     height: 600px;
+    width: 100%;
+    position: relative;
 }
-.logo-opaciti {
-    width: 100wv;
+.slide-opacity {
+    width: 100%;
     height: 600px;
     background-color: rgba(0, 0, 0, 0.52 );
+    position: absolute;
 }
-.logo-copy {
-    color: white;
-}
-
-         /* ТЕКСТ НА ФОНЕ */
-
-
-.text-on-background {
-    margin: auto;
+.slide-tex {
     width: 738px;
+    margin: auto;
 }
-.logo-caption {
+h1 {
+    margin: auto;
     text-align: center;
-    line-height: 63px;
+    line-height: 92px;
     color: white;
     font-family: Roboto;
     font-size: 60px;
     letter-spacing: -1.2px;
     text-transform: uppercase;
     padding-top: 210px;
-    margin: 0;
 }
-.logo-subtitle {
+.commercial-tex {
     color: #ffffff;
     font-family: "Roboto Light";
     font-weight: 300;
@@ -101,15 +82,18 @@ header {
     text-transform: uppercase;
     font-size: 24px;
     margin: 0;
+    padding-left: 1.5%;
 }
 
-            /* КНОПКИ ПЕРЕЛИСТЫВАНИЯ СЛАЙДОВ (представим что там есть куда листать) */
+            /* КНОПКИ ПЕРЕЛИСТЫВАНИЯ СЛАЙДОВ */
 
 
 .click {
     display: inline-block;
     width: 104px;
     height: 104px;
+    background-color: rgba(78,198,171);
+    opacity: 0.65; 
     color: #ffffff;
     line-height: 11px;
     font-weight: 400;
@@ -118,25 +102,37 @@ header {
     border: 0;
     transform: translateY(-120%);
 }
-.pe-7s-angle-left {
-    margin-left: 15.5%;
-}
-.pe-7s-angle-left:hover {
-    background-color: #1abc9c;
-    opacity: 0.65;
+.pe-7s-angle-left:hover,
+.pe-7s-angle-right:hover {
+    background-color: #4ec6ab;
+    opacity: 1;
 }
 .pe-7s-angle-right {
     margin-left: 55%;
 }
-.pe-7s-angle-right:hover {
-    background-color: #1abc9c;
-    opacity: 0.65;
+.pe-7s-angle-left {
+    margin-left: 15.5%;
 }
 
-            /* ЗАГЛАВИЕ ПЕРЕД КАРТОЧКАМИ */
+
+/* КОНТЕНТ */
 
 
-.logo-middle {
+main {
+    width: auto;
+    text-align: center;
+    background-color: #e9f0fd;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 676px;
+    text-align: center;
+}
+
+
+/* ЗАГЛАВИЕ ПЕРЕД КАРТОЧКАМИ */
+
+
+h2 {
     padding-top: 100px;
     margin: 0;
     text-align: center;
@@ -149,7 +145,7 @@ header {
     letter-spacing: -0.96px;
     background-color: #e9f0fd;
 }
-.logo-middle::after {
+h2::after {
     content: '';
     display: block;
     margin: auto;
@@ -159,51 +155,41 @@ header {
 }
 
 
-      /* КОНТЕНТ */
+/* КАРТОЧКИ */
 
 
-main {
-    width: auto;
-    height: 430px;
-    text-align: center;
-    padding-top: 80px;
-    background-color: #e9f0fd;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
 .card {
     display: inline-block;
-    height: 322px;
-    width: 255px;
     margin: 15px;
-}   
-.card-fon-first {
-    background: url(..//images/category-1.png)
-}
-.card-fon-second {
-    background: url(..//images/category-2.png);
-}
-.card-fon-third {
-    background: url(..//images/category-3.png);
-}
-.card-fon-forth {
-    background: url(..//images/category-4.png);
-}
-
-      /* ВСПЛЫВАЮЩИЕ ФУНКЦИИ */
-
-
-.card-opacity {
+    margin-top: 82px;
     position: relative;
-    width: 235px;
-    height: 281px;
-    margin: 10px;
-    background-color: rgba(0, 0, 0, 0.55);
-    opacity: 0;
+    width: 255px;
+    height: 322px;
 }
 .card:hover .card-opacity {
     opacity: 1;
 }
+.card-picture {
+    position: absolute;
+    transform: translateX(-50%);
+}
+.card-box {
+    position: absolute;  
+    height: 322px;
+    width: 255px;
+    z-index: 10;
+}
+.card-opacity {
+    height: 262px;
+    background-color: rgba(0,0,0,0.55);
+    margin: 10px;
+    opacity: 0;
+}
+
+     /* ХОВЕР МЕНЮ */
+
+
+
 .card-function-box {
     position: absolute;
     bottom: 50%;
@@ -223,7 +209,7 @@ main {
 .card-function-box span {
     line-height: 50px;
 }
-.top-icons span {
+.top-icon span {
     width: 50px;
     height: 50px;
     border: 1px solid #ffffff;
@@ -237,6 +223,7 @@ main {
 .pe-7s-cart {
     width: 50px;
     height: 50px;
+    margin-left: -20px;
 }
 .cart-text {
     margin-top: -12px;
@@ -253,12 +240,18 @@ main {
     border: 1px solid #1abc9c;
     background-color: #1abc9c;
 }
+ 
 
-       /* ОПИСАНИЕ КАРТОЧКИ */
+/* ОПИСАНИЕ КАРТОЧКИ */
+
+
+.card-name, .card-price {
+    display: inline-block;
+    margin: 0;
+}
 
 
 .card-name {
-    display: inline-block;
     width: 192px;
     height: 40px;
     background-color: #323232;
@@ -268,12 +261,10 @@ main {
     text-transform: uppercase;
     text-align: left;
     padding-left: 12px;
-    margin: 0;
     margin-left: -4px;
     color: white;
 }
 .card-price {
-    display: inline-block;
     width: 52px;
     height: 40px;
     opacity: 0.44;
@@ -281,7 +272,6 @@ main {
     font-size: 18px;
     font-family: roboto;
     line-height: 40px;
-    margin: 0;
     margin-right: -4px;
     margin-left: -4px;
     color: white;
@@ -290,8 +280,8 @@ main {
     background-color: #1abc9c;
 }
 
-        /* НИЗ САЙТА */
 
+  /* НИЗ САЙТА */
 
 footer {
     height: 88px;
@@ -307,11 +297,11 @@ footer {
     color: #fefefe;
     text-transform: capitalize;
 }
-p span {
-    color: #46bfa9;
+.logo-bot a {
+    color: #fefefe;
+    text-decoration: none;
 }
 
-
-
-    
-   
+.logo-bot:hover a {
+    color: #46bfa9;
+}
