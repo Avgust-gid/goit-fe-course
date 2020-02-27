@@ -164,7 +164,6 @@ h2::after {
     margin-top: 82px;
     position: relative;
     width: 255px;
-    height: 322px;
 }
 .card:hover .card-opacity {
     opacity: 1;
