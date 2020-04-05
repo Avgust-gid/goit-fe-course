@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'),
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff');
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'),
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff');
+  }
+  /* dancing-script-regular - latin */
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dancing Script'),
+         url('../fonts/dancing-script-v14-latin-regular.woff2') format('woff2'),
+         url('../fonts/dancing-script-v14-latin-regular.woff') format('woff');
+  }
+  /* pacifico-regular - latin */
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'),
+         url('../fonts/pacifico-v16-latin-regular.woff2') format('woff2'),
+         url('../fonts/pacifico-v16-latin-regular.woff') format('woff');
+  }
+  /* roboto-slab-regular - latin */
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-slab-v11-latin-regular.woff2') format('woff2'),
+         url('../fonts/roboto-slab-v11-latin-regular.woff') format('woff');
+  }
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+
+                                                                 /* header */
+
+
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 120px;
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  .page-header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 485px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .menu-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-nav {
+    display: block;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-decoration: none;
+    justify-content: space-between;
+    text-transform: uppercase;
+    color: #222222;
+    transition: color 200ms linear;
+    font-weight: bold;
+  }
+  
+  .item-nav:hover,
+  .item-nav:focus {
+    color:#fed136;
+  }
+  
+  .logo {
+    display: flex;
+    font-size: 28px;
+    font-family: "Dancing Script";
+    color:#fed136;
+    text-decoration: none;
+    align-items: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  
+                                                                 /* main */
+
+
+  .container {
+    padding-top: 108px;
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(34, 34, 34);
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle, .subtitle-bot {
+    display: block;
+    font-size: 16px;
+    font-family: Pacifico;
+    color: rgb(119, 119, 119);
+    text-transform: none;
+    padding: 0;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-align: center;
+    padding-bottom: 122px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(34, 34, 34);
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    font-size: 14px;
+    font-family: "Roboto Slab";
+    color: rgb(119, 119, 119);
+    line-height: 1.6;
+  }
+  
+  .services-list-item {
+    width: 296px;
+  }
+  
+  .E-Commerce::before {
+    display: block;
+    content: '';
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
+    background-image: url(../images/Basket.png);
+    margin-bottom: 30px;
+  }
+  
+  .Responsive-Web::before {
+    display: block;
+    content: '';
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
+    background-image: url(../images/Computer.png);
+    margin-bottom: 30px;
+  }
+  
+  .Web-Securit::before {
+    display: block;
+    content: '';
+    width: 74px;
+    height: 74px;
+    margin: 0 auto;
+    background-image: url(../images/Castle.png);
+    margin-bottom: 30px;
+  }
+  
+  
+                                                                  /* contact */
+
+
+  .contact {
+    background-image: url(../images/Earth.png);
+    background-repeat: no-repeat;
+    background-color: rgba(34, 34, 34);
+    background-position: right;
+    height: 676px; 
+  }
+  
+  .contact h2 {
+    font-family: "Montserrat";
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .subtitle-bot {
+    margin-bottom: 75px;
+  }
+ 
+  .fields-input {
+    width: 100%;
+    height: 310px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-content: space-between;
+    margin-bottom: 96px;
+  }
+ 
+  .box-input {
+    height: 212px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+  }  
+
+  .box-input input,
+  .textarea {
+    width: 455px;
+    border-radius: 5px;
+  }
+
+  .box-input input {
+    display: block;
+    border: 0;
+    height: 50px;
+  }
+    
+  .textarea {
+    height: 210px;
+    resize: none;
+  }
+  
+  .download-button {
+    border: 0;
+    display: block;
+    background-color: rgb(254, 209, 54);
+    width: 240px;
+    height: 66px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+  
+  input::placeholder,
+  .textarea::placeholder {
+    padding: 20px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(187, 187, 187);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  input:valid {
+    outline-color: green;
+    outline-width: 3px;
+    outline-style: dotted;
+  }
+  
+  input:invalid {
+    outline-color: red;
+    outline-width: 3px;
+    outline-style: dotted;
+  }
+  
+  input:placeholder-shown {
+    outline-width: 0px;
+  }
